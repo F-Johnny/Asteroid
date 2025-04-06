@@ -47,6 +47,11 @@ def main():
             if obj.collision(player) == False:
                 print('Game over!')
                 sys.exit()
+            for shot in shots:
+                if shot.collision(obj) == False:
+                    shot.kill()
+                    obj.kill()
+
 
 
         #Limiting framerates to 60
