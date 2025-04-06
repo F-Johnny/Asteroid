@@ -50,7 +50,7 @@ def main():
             for shot in shots:
                 if shot.collision(obj) == False:
                     shot.kill()
-                    obj.kill()
+                    obj.split()
 
 
 
